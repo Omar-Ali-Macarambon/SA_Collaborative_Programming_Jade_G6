@@ -34,3 +34,42 @@ elif Q1_Ten >= 40:
 elif Q1_Ten < 40:
     Q1 = "5.00" 
 print("Q1 Grade = ", Q1)
+
+# Now we create the code for the Q2 Grade
+# Copy paste the code for Q1 but change Q1 to Q2
+SA1 = (float(input("Please input the percent of your Summative Assesment 1 without the % symbol: ")))
+SA2 = (float(input("Please input the percent of your Summative Assesment 2 without the % symbol: ")))
+SA_Final = (((SA1 + SA2)/2)*0.7)
+print("SA Final Grade = ", SA_Final,"%")
+
+FA1 = (float(input("Please input the percent of your Formative Assesment 1 without the % symbol: ")))
+FA2 = (float(input("Please input the percent of your Formative Assesment 2 without the % symbol: ")))
+FA_Final = (((FA1 + FA2)/2)*0.3)
+print("FA Final Grade = ", FA_Final,"%")
+
+Q2_Ten = (SA_Final + FA_Final)
+# Make the formula for the cumulative Q2 Grade
+Q2 = ((Q1_Ten + (Q2_Ten * 2))/3)
+if Q2 >= 96:
+    Q2 = "1.00"
+elif Q2 >= 90:
+    Q2 = "1.25" 
+elif Q2 >= 84:
+    Q2 = "1.50" 
+elif Q2 >= 78:
+    Q2 = "1.75" 
+elif Q2 >= 72:
+    Q2 = "2.00" 
+elif Q2 >= 66:
+    Q2 = "2.25" 
+elif Q2 >= 60:
+    Q2 = "2.50" 
+elif Q2 >= 55:
+    Q2 = "2.75" 
+elif Q2 >= 50:
+    Q2 = "3.00" 
+elif Q2 >= 40:
+    Q2 = "4.00" 
+elif Q2 < 40:
+    Q2 = "5.00" 
+print("Q2 Grade = ", Q2)
