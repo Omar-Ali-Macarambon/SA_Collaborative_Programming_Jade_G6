@@ -112,3 +112,60 @@ elif Q3 >= 40:
 elif Q3 < 40:
     Q3 = "5.00" 
 print("Q3 Grade = ", Q3)
+
+# Q4 Cumulative Grade
+
+SA1 = (float(input("Please input the percent of your Summative Assesment 1 without the % symbol: ")))
+SA2 = (float(input("Please input the percent of your Summative Assesment 2 without the % symbol: ")))
+SA_Final = (((SA1 + SA2)/2)*0.7)
+print("SA Final Grade = ", SA_Final,"%")
+
+FA1 = (float(input("Please input the percent of your Formative Assesment 1 without the % symbol: ")))
+FA2 = (float(input("Please input the percent of your Formative Assesment 2 without the % symbol: ")))
+FA_Final = (((FA1 + FA2)/2)*0.3)
+print("FA Final Grade = ", FA_Final,"%")
+
+Q4_Ten = (SA_Final + FA_Final)
+# Make the formula for the cumulative Q4 Grade
+Q4 = ((Q3_Ten + (Q4_Ten * 2))/3)
+if Q4 >= 96:
+    Q4 = "1.00"
+elif Q4 >= 90:
+    Q4 = "1.25" 
+elif Q4 >= 84:
+    Q4 = "1.50" 
+elif Q4 >= 78:
+    Q4 = "1.75" 
+elif Q4 >= 72:
+    Q4 = "2.00" 
+elif Q4 >= 66:
+    Q4 = "2.25" 
+elif Q4 >= 60:
+    Q4 = "2.50" 
+elif Q4 >= 55:
+    Q4 = "2.75" 
+elif Q4 >= 50:
+    Q4 = "3.00" 
+elif Q4 >= 40:
+    Q4 = "4.00" 
+elif Q4 < 40:
+    Q4 = "5.00" 
+print("Q4 Grade = ", Q4)
+
+# Make code for the Adjectival Equivalent
+
+if Q4 == "1.00":
+    Q4 = "Adjectival Equivalent: EXCELLENT"
+if Q4 == "1.25" or Q4 == "1.50":
+    Q4 = "Adjectival Equivalent: VERY GOOD"
+if Q4 == "1.75" or Q4 == "2.00":
+    Q4 = "Adjectival Equivalent: GOOD"
+if Q4 == "2.25" or Q4 == "2.50":
+    Q4 = "Adjectival Equivalent: SATISFACTORY"
+if Q4 == "2.75" or Q4 == "3.00":
+    Q4 = "Adjectival Equivalent: FAIR"
+if Q4 == "4.00":
+    Q4 = "Adjectival Equivalent: FAILED ON CONDITION"
+if Q4 == "5.00":
+    Q4 = "Adjectival Equivalent: FAILED"
+print(Q4)
